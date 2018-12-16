@@ -7,7 +7,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if (Serial.available()>0){
+  if (Serial.available() > 0){
+    Serial.println("ok");
+  
     char c = Serial.read();
     Serial.println(c);
     if (c=='a'){
@@ -25,5 +27,6 @@ void loop() {
   delay(timeDelay);
   digitalWrite(13, LOW);
   delay(timeDelay);
+  
   
 }

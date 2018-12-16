@@ -14,7 +14,7 @@ turtle.speed(0)
 turtle.goto(-500, 0)
 turtle.pendown()
 turtle.speed(1)
-ser = serial.Serial('COM4')
+ser = serial.Serial('COM5')
 i = 0
 byteNum = b'0'
 
